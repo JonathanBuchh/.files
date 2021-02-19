@@ -1,0 +1,22 @@
+[user]
+	email = 63243849+JonathanBuchh@users.noreply.github.com
+	name = Jonathan Buchholz
+	signingkey = 0EFF567B6F35A642
+[gpg]
+	program = /usr/local/bin/gpg
+[commit]
+	gpsign = true
+	gpgsign = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = jonathanbuchholz\\.gitignore
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg
