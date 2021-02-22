@@ -1,5 +1,38 @@
 [user]
+
 	email = 63243849+JonathanBuchh@users.noreply.github.com
 	name = Jonathan Buchholz
+	
 [core]
-	excludesfile = jonathanbuchholz\\.gitignore
+
+	excludesfile = ~/.gitignore
+	
+[alias]
+
+	# View abbreviated SHA, description, and history graph of the latest 20 commits.
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+
+	# View the current working tree status using the short format.
+	s = status -s
+	
+	# Pull in remote changes for the current repository and all its submodules.
+	p = pull --recurse-submodules
+
+	# Clone a repository including all submodules.
+	c = clone --recursive
+
+	# Commit all changes.
+	ca = !git add -A && git commit -av
+
+	# Show verbose output about branches or remotes.
+	branches = branch --all
+	remotes = remote --verbose
+
+	# List aliases.
+	aliases = config --get-regexp alias
+
+	# Amend the currently staged files to the latest commit.
+	amend = commit --amend --reuse-message=HEAD
+
+	# Show the user name and email for the current repository.
+	whoami = config user.email
