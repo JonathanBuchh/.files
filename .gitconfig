@@ -2,6 +2,11 @@
 
 	email = 63243849+JonathanBuchh@users.noreply.github.com
 	name = Jonathan Buchholz
+	signingkey = 916E266F7711AE58
+
+[commit]
+
+	gpgsign = true
 	
 [core]
 
