@@ -41,3 +41,8 @@
 
 	# Show the user name and email for the current repository.
 	whoami = config user.email
+
+[credential]
+
+	# Store credentials
+	helper = store
