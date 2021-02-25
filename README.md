@@ -1,2 +1,2 @@
 # .files
-Inspired by [@mathiasbynens](https://github.com/mathiasbynens)'s [dotfiles](https://github.com/mathiasbynens/dotfiles).
+**Warning**: Do not ever install a script that you do not fully understand. It could be malicious and corrupt your computer.
