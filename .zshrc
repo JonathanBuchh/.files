@@ -13,6 +13,5 @@ alias gaa='git add .'
 alias gc='git commit'
 alias gp='git pull'
 alias gpu='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
-alias gp='git pull'
 alias gs='git status -s' # Account for missing t key
 alias gl='git log --oneline --decorate'
