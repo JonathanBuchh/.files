@@ -1,7 +1,7 @@
 {
     "global": {
         "check_for_updates_on_startup": true,
-        "show_in_menu_bar": true,
+        "show_in_menu_bar": false,
         "show_profile_name_in_menu_bar": false
     },
     "profiles": [
@@ -11,7 +11,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change caps_lock to command+control+option+shift.",
+                                "description": "Change caps_lock to command+control+option+shift",
                                 "from": {
                                     "key_code": "caps_lock",
                                     "modifiers": {
@@ -22,11 +22,11 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_shift",
+                                        "key_code": "shift",
                                         "modifiers": [
-                                            "left_command",
-                                            "left_control",
-                                            "left_option"
+                                            "command",
+                                            "control",
+                                            "option"
                                         ]
                                     }
                                 ],
@@ -36,6 +36,24 @@
                                     }
                                 ],
                                 "type": "basic"
+                            },
+                            {
+                                "type": "basic",
+                                "description":"Em dash",
+                                "from": {
+                                    "key_code": "shift",
+                                    "modifiers": [
+                                        "command",
+                                        "control",
+                                        "option",
+                                        "hyphen"
+                                    ]
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "h"
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -77,7 +95,7 @@
                 "f8": "vk_consumer_play",
                 "f9": "vk_consumer_next"
             },
-            "name": "Default profile",
+            "name": "Default",
             "one_to_many_mappings": {},
             "selected": true,
             "simple_modifications": {},
