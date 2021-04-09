@@ -16,3 +16,7 @@ alias gpu='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
 alias gs='git status -s' # Account for missing t key
 alias gl='git log --oneline --decorate'
 alias gca='git commit -v -a'
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
+bindkey -v
