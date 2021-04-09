@@ -20,3 +20,18 @@ alias c='clear'
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
+function rm () {
+  local path
+  for path in "$@"; do
+    # ignore any arguments
+    if [[ "$path" = -* ]]; then :
+    else
+      local dst=${path##*/}
+      # append the time if necessary
+      while [ -e ~/.Trash/"$dst" ]; do
+        dst="$dst "$(date +%H-%M-%S)
+      done
+      /bin/mv "$path" ~/.Trash/"$dst"
+    fi
+  done
+}
