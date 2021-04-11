@@ -1,10 +1,6 @@
-# Path to oh-my-zsh installation
 export ZSH="/Users/jonathanbuchholz/.oh-my-zsh"
-
 ZSH_THEME="robbyrussell"
-
 plugins=(git)
-
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
@@ -17,9 +13,9 @@ alias gs='git status -s' # Account for missing t key
 alias gl='git log --oneline --decorate'
 alias gca='git commit -v -a'
 alias c='clear'
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
+alias vim='nvim'
+
+# rm moves to trash
 function rm () {
   local path
   for path in "$@"; do
@@ -35,3 +31,6 @@ function rm () {
     fi
   done
 }
+
+# rbenv
+eval "$(rbenv init -)"
