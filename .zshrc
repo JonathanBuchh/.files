@@ -13,7 +13,6 @@ alias gs='git status -s' # Account for missing t key
 alias gl='git log --oneline --decorate'
 alias gca='git commit -v -a'
 alias c='clear'
-alias vim='nvim'
 
 # rm moves to trash
 function rm () {
