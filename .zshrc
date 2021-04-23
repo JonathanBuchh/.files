@@ -1,5 +1,8 @@
 export ZSH="/Users/jonathanbuchholz/.oh-my-zsh"
-plugins=(git)
+plugins=(
+	git
+	zsh-autosuggestions
+)
 ZSH_THEME="robbyrussell"
 source $ZSH/oh-my-zsh.sh
 
