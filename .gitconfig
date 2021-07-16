@@ -6,6 +6,7 @@
 	gpgsign = true
 [core]
 	excludesfile = ~/.gitignore
+	editor = nvim
 [credential]
 	# Store credentials
 	helper = store
